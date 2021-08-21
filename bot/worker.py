@@ -52,7 +52,7 @@ async def encod(event):
             oc = event.fwd_from.from_id.user_id
             occ = (await event.client.get_me()).id
             if oc == occ:
-                return await event.reply("`This Video File is already Compressed 😑😑.`")
+                return await event.reply("`This Video File is already Encoded 😑😑.`")
         except BaseException:
             pass
         if WORKING or QUEUE:
@@ -109,7 +109,7 @@ async def encod(event):
         kk = dl.split("/")[-1]
         aa = kk.split(".")[-1]
         rr = f"encode"
-        bb = kk.replace(f".{aa}", " compressed.mkv")
+        bb = kk.replace(f".{aa}", " Encoded.mkv")
         out = f"{rr}/{bb}"
         thum = "thumb.jpg"
         dtime = ts(int((es - s).seconds) * 1000)
@@ -117,7 +117,7 @@ async def encod(event):
         hehe = f"{out};{dl};0"
         wah = code(hehe)
         nn = await e.edit(
-            "`Compressing..`",
+            "`Encodin'..`",
             buttons=[
                 [Button.inline("STATS", data=f"stats{wah}")],
                 [Button.inline("CANCEL PROCESS", data=f"skip{wah}")],
@@ -131,7 +131,7 @@ async def encod(event):
         er = stderr.decode()
         try:
             if er:
-                await e.edit(str(er) + "\n\n**ERROR** Contact @danish_00")
+                await e.edit(str(er) + "\n\n**ERROR** Contact @SenpaiAF")
                 WORKING.clear()
                 os.remove(dl)
                 return os.remove(out)
@@ -165,7 +165,7 @@ async def encod(event):
         a1 = await info(dl, e)
         a2 = await info(out, e)
         dk = await ds.reply(
-            f"Original Size : {hbs(org)}\nCompressed Size : {hbs(com)}\nCompressed Percentage : {per}\n\nMediainfo: [Before]({a1})//[After]({a2})\n\nDownloaded in {x}\nCompressed in {xx}\nUploaded in {xxx}",
+            f"Original Size : {hbs(org)}\nEncoded Size : {hbs(com)}\nEncoded Percentage : {per}\n\nMediainfo: [Before]({a1})//[After]({a2})\n\nDownloaded in {x}\nEncoded in {xx}\nUploaded in {xxx}",
             link_preview=False,
         )
         os.remove(dl)
