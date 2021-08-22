@@ -141,7 +141,7 @@ async def skip(e):
     try:
         if QUEUE.get(int(id)):
             WORKING.clear()
-             QUEUE.pop(int(id))
+            QUEUE.pop(int(id))
         await e.delete()
         os.remove(dl)
         os.remove(out)
