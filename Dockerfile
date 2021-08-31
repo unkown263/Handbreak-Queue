@@ -40,4 +40,3 @@ ffmpeg 2>&1 | head -n1
 COPY . .
 RUN pip3 install -r requirements.txt
 CMD ["bash","run.sh"]
-
