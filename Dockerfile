@@ -16,5 +16,6 @@ COPY . .
 
 # Install Requirements
 RUN pip3 install -r requirements.txt
+
 # Start Bot
 CMD ["bash","run.sh"]
