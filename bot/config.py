@@ -22,6 +22,9 @@ try:
     DEV = 1322549723
     OWNER = config("OWNER")
     FFMPEG = config("FFMPEG")
+    THUMB = config(
+        "THUMBNAIL", default="https://telegra.ph/file/75ee20ec8d8c8bba84f02.jpg"
+    )
 except Exception as e:
     LOGS.info("Environment vars Missing")
     LOGS.info("something went wrong")
