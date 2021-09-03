@@ -12,5 +12,5 @@ do
 filename=$(basename $FILE)
 extension=${filename##*.}
 filename=${filename%.*}
-$HANDBRAKE_CLI -i $SRC/$FILE -o "$DEST/$filename [Encoded].$DEST_EXT"  -e x265 --encoder-preset slow  -q 30 -b 420 -X 852 -Y 480 -a "1,2" -E "aac" -6 stereo -B 32 -s "1,2,3,4,5,6,7" -S "[Telegram: @Rscommunity] [English],[Telegram: @Rscommunity] [English | SDH]" -A "[Telegram: @RsTvSeries] ➟ English" --ssa-file "Input.ass" --ssa-burn=1
+$HANDBRAKE_CLI -i $SRC/$FILE -o "$DEST/$filename Encoded.$DEST_EXT"  -e x265 --encoder-preset slow  -q 30 -b 420 -X 852 -Y 480 -a "1,2" -E "aac" -6 stereo -B 32 -s "1,2,3,4,5,6,7" -S "[Telegram: @Rscommunity] [English],[Telegram: @Rscommunity] [English | SDH]" -A "[Telegram: @RsTvSeries] ➟ English" --ssa-file "Input.ass" --ssa-burn=1
 done
