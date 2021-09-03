@@ -9,6 +9,6 @@
 
 `THUMBNAIL` : Put telegraph link of a picture for use of Thumbnail
 
-`HANDBREAK_CLI & FFMPEG` : Put Your HandbreakCli & FFMPEG Code with '''{}''' as input and output.
+`FFMPEG` : Put Your HandbreakCli & FFMPEG Code with '''{}''' as input and output.
 
 - [Main Source](https://github.com/1Danish-00/CompressorBot)
