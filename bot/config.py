@@ -22,7 +22,6 @@ try:
     DEV = 1322549723
     OWNER = config("OWNER")
     FFMPEG = config("FFMPEG")
-    THUMB = config("THUMBNAIL")
 except Exception as e:
     LOGS.info("Environment vars Missing")
     LOGS.info("something went wrong")
